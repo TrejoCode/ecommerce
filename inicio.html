@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <link rel="stylesheet" href="assets/css/core.min.css" media="screen">
-    <link rel="stylesheet" href="assets/css/style.min.css" media="screen">
+    <link rel="stylesheet" href="assets/css/style.css" media="screen">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
@@ -60,7 +60,7 @@
                                             <a class="weight-medium">
                                                 INVITADO
                                             </a>
-                                            <a class="sign-in link color-orange weight-medium" href="#">
+                                            <a id="open-modal-login" class="sign-in link color-orange weight-medium" href="#">
                                                 Iniciar Sesión
                                             </a>
                                         </div>
@@ -543,6 +543,62 @@
                 </div>                               
             </footer>
 
+            <div class="modal-login justify-center" id="modal-login">
+                <div class="container">
+                    <div class="modal-content">
+                        <div class="column">
+                            <div class="row justify-end">
+                                <a href="" id="modal-close">&times;</a> 
+                            </div>
+                            <div class="login-method row-responsive">
+                                <div class="left">
+                                    <div class="column">
+                                        <h2 class="login-title">
+                                            INICIAR SESIÓN
+                                        </h2>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h5>
+                                                Correo: &nbsp;
+                                            </h5>
+                                            <input class="input-text" type="email" name="login-email" />
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h5>
+                                                Contraseña: &nbsp;
+                                            </h5>
+                                            <input class="input-text" type="password" name="login-password" />
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div>
+                                            <a class="btn btn-orange" href="#" id="btn-login">
+                                                INICIAR SESIÓN
+                                            </a>
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                    </div>
+                                </div>
+                                <div class="right align-center">
+                                    <div class="column">
+                                        <div class="white-space-8"></div>
+                                        <div class="login-fb color-white justify-center align-center" id="login-fb">
+                                            <i class="fab fa-facebook-f"></i>
+                                            Iniciar Sesión con Facebook
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="login-gogl color-white justify-center align-center" id="login-gogl">
+                                            <i class="fab fa-google"></i>
+                                            Iniciar Sesión con Google
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Modal-->
+
         </div> <!-- End Main Column -->
     </div>  <!-- End Main -->   
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script>
@@ -556,6 +612,33 @@
     <script async src="assets/js/wow.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+    <script>
+        // Get the modal
+            var modal = document.getElementById('modal-login');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("open-modal-login");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementById("modal-close");
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
     </script>
 </body>
 </html>
