@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/core.css" media="screen">
+    <link rel="stylesheet" href="assets/css/style.css" media="screen">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7"
+        crossorigin="anonymous">
+    <title>Dwit - Catálogo</title>
+</head>
+
+<body>
+    
+    <div class="main-cart flex">
+        <div class="column">
+            <header>
+                <div class="row justify-center">
+                    <div class="container">
+                        <div class="row-responsive" id="break-ipad">
+                            <div class="logo auto align-center wow fadeInLeft">
+                                <a href="#">
+                                    <div class="responsive-img">
+                                        <img src="assets/img/logo.jpg" alt="Dwit México Logo" title="Dwit México Logo">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="search align-center wow fadeInLeft" data-wow-delay="0.4s">
+                                <input class="input-search input-text" type="text" name="search-input">
+                                <button class="btn btn-orange" id="search-button">
+                                    <i class="color-white fas fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="cart-user auto align-center wow fadeInRight" data-wow-delay="0.7s">
+                                <div class="cart">
+                                    <div class="row">
+                                        <div class="icon align-center">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </div>
+                                        <div class="column">
+                                            <a class="weight-medium">
+                                                CARRITO
+                                            </a>
+                                            <a class="subtotal link color-orange weight-medium" href="#">
+                                                $250.00
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <div class="row">
+                                        <div class="icon align-center">
+                                            <i class="fas fa-user-tag"></i>
+                                        </div>
+                                        <div class="column">
+                                            <a class="weight-medium">
+                                                INVITADO
+                                            </a>
+                                            <a class="sign-in link color-orange weight-medium" href="#">
+                                                Iniciar Sesión
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header><!-- End Header-->
+
+            <div class="carrito justify-center">                
+                <div class="container">
+                    <div class="column">
+                        <div class="white-space-32"></div>
+                        <div class="cart-title align-center color-orange">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h2 class="color-orange">
+                                &nbsp; CARRITO DE COMPRAS
+                            </h2>
+                        </div>
+                        <div class="white-space-32"></div>
+
+                        <div class="table-scroll">
+                            <table class="cart-table" cellspacing="0" cellpadding="0">
+                                <!-- Table Head-->
+                                <tr class="table-head">
+                                    <th>Imagen</th>
+                                    <th>Producto</th>
+                                    <th>Unidad</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio Unitario</th>
+                                    <th>Total</th>
+                                </tr> <!-- End Table Head-->
+                            
+                                <!-- Table Data Row -->
+                                <tr class="table-row">
+                                    <td class="table-img bordered">
+                                        <div class="responsive-img">
+                                            <img src="assets/img/producto1.jpg" alt="Producto en carrito" title="Producto en carrito">
+                                        </div>
+                                    </td>
+                                    <td class="nombre-producto bordered">
+                                        Laptop HP 15 G99 500bg SSD + Mochila y Kit hp-15w00c99la
+                                    </td>
+                                    <td class="unidad bordered">
+                                        Pieza
+                                    </td>
+                                    <td class="cantidad bordered">
+                                        <input class="input-text" type="number" step="1" placeholder="Cantidad" name="cantidad">
+                                    </td>
+                                    <td class="precio-unitario bordered">
+                                        $3,900.00
+                                    </td>
+                                    <td class="precio-total bordered">
+                                        $3,900.00
+                                    </td>
+                                </tr> <!-- End Table Data Row-->
+                            
+                                <!-- Table Data Row -->
+                                <tr class="table-row">
+                                    <td class="table-img bordered">
+                                        <div class="responsive-img">
+                                            <img src="assets/img/producto1.jpg" alt="Producto en carrito" title="Producto en carrito">
+                                        </div>
+                                    </td>
+                                    <td class="nombre-producto bordered">
+                                        Laptop HP 15 G99 500bg SSD + Mochila y Kit hp-15w00c99la
+                                    </td>
+                                    <td class="unidad bordered">
+                                        Pieza
+                                    </td>
+                                    <td class="cantidad bordered">
+                                        <input class="input-text" type="number" step="1" placeholder="Cantidad" name="cantidad">
+                                    </td>
+                                    <td class="precio-unitario bordered">
+                                        $3,900.00
+                                    </td>
+                                    <td class="precio-total bordered">
+                                        $3,900.00
+                                    </td>
+                                </tr> <!-- End Table Data Row-->
+                            
+                                <!-- Table Data Row -->
+                                <tr class="table-row">
+                                    <td class="table-img bordered">
+                                        <div class="responsive-img">
+                                            <img src="assets/img/producto1.jpg" alt="Producto en carrito" title="Producto en carrito">
+                                        </div>
+                                    </td>
+                                    <td class="nombre-producto bordered">
+                                        Laptop HP 15 G99 500bg SSD + Mochila y Kit hp-15w00c99la
+                                    </td>
+                                    <td class="unidad bordered">
+                                        Pieza
+                                    </td>
+                                    <td class="cantidad bordered">
+                                        <input class="input-text" type="number" step="1" placeholder="Cantidad" name="cantidad">
+                                    </td>
+                                    <td class="precio-unitario bordered">
+                                        $3,900.00
+                                    </td>
+                                    <td class="precio-total bordered">
+                                        $3,900.00
+                                    </td>
+                                </tr> <!-- End Table Data Row-->
+                            
+                                <!-- Table Data Row -->
+                                <tr class="table-row">
+                                    <td class="table-img bordered">
+                                        <div class="responsive-img">
+                                            <img src="assets/img/producto1.jpg" alt="Producto en carrito" title="Producto en carrito">
+                                        </div>
+                                    </td>
+                                    <td class="nombre-producto bordered">
+                                        Laptop HP 15 G99 500bg SSD + Mochila y Kit hp-15w00c99la
+                                    </td>
+                                    <td class="unidad bordered">
+                                        Pieza
+                                    </td>
+                                    <td class="cantidad bordered">
+                                        <input class="input-text" type="number" step="1" placeholder="Cantidad" name="cantidad">
+                                    </td>
+                                    <td class="precio-unitario bordered">
+                                        $3,900.00
+                                    </td>
+                                    <td class="precio-total bordered">
+                                        $3,900.00
+                                    </td>
+                                </tr> <!-- End Table Data Row-->
+                            </table>
+                        </div> <!-- End Table Scroll -->                                            
+
+                        <div class="white-space-32"></div>
+
+                        <table class="flex table-subtotal auto" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td class="weight-medium bordered">
+                                    Sub-Total: 
+                                </td>
+                                <td class="subtotal bordered">
+                                    $3,900.00
+                                </td>                                
+                            </tr>
+                            <tr>
+                                <td class="weight-medium bordered">
+                                    IVA: 
+                                </td>
+                                <td class="iva bordered">
+                                    $480.00
+                                </td>                                
+                            </tr>
+                            <tr>
+                                <td class="weight-medium bordered">
+                                    Total: 
+                                </td>
+                                <td class="total bordered">
+                                    $480.00
+                                </td>                                
+                            </tr>
+                        </table> <!-- End table-subtotal -->
+
+                        <div class="white-space-16"></div>
+                        <div class="btn-checkout">
+                            <a class="btn" id="btn-checkout" href="#checkout">
+                                CHECKOUT
+                            </a>
+                        </div> <!-- End Btn-Checkout -->
+
+                        <div class="white-space-32"></div>
+
+                        <!-- CheckoutModule -->
+
+                        <div class="checkout justify-center" id="checkout">
+                            <div class="row-responsive">
+                                <div class="left">
+                                    <div class="column">
+                                        <h3>
+                                            INFORMACIÓN DE CONTACTO
+                                        </h3>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h4>Nombre &nbsp;</h4>
+                                            <input class="input-text" type="text" placeholder="Nombre(s)">
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h4>Apellidos &nbsp;</h4>
+                                            <input class="input-text" type="text" placeholder="Apellidos">
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h4>Teléfono &nbsp;</h4>
+                                            <input class="input-text" type="text" placeholder="Teléfono">
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h4>Correo &nbsp;</h4>
+                                            <input class="input-text" type="text" placeholder="Correo">
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h4>Dirección &nbsp;</h4>
+                                            <input class="input-text" type="text" placeholder="Dirección">
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h4>Estado &nbsp;</h4>
+                                            <select class="input-select" name="estados">
+                                                <option value="0">Selecciona un estado</option>
+                                                <option value="1">Aguascalientes</option>
+                                                <option value="2">Baja California</option>
+                                                <option value="3">Baja California Sur</option>
+                                                <option value="4">Campeche</option>
+                                                <option value="5">Coahuila de Zaragoza</option>
+                                                <option value="6">Colima</option>
+                                                <option value="7">Chiapas</option>
+                                                <option value="8">Chihuahua</option>
+                                                <option value="9">Distrito Federal</option>
+                                                <option value="10">Durango</option>
+                                                <option value="11">Guanajuato</option>
+                                                <option value="12">Guerrero</option>
+                                                <option value="13">Hidalgo</option>
+                                                <option value="14">Jalisco</option>
+                                                <option value="15">México</option>
+                                                <option value="16">Michoacán</option>
+                                                <option value="17">Morelos</option>
+                                                <option value="18">Nayarit</option>
+                                                <option value="19">Nuevo León</option>
+                                                <option value="20">Oaxaca</option>
+                                                <option value="21">Puebla</option>
+                                                <option value="22">Querétaro</option>
+                                                <option value="23">Quintana Roo</option>
+                                                <option value="24">San Luis Potosí</option>
+                                                <option value="25">Sinaloa</option>
+                                                <option value="26">Sonora</option>
+                                                <option value="27">Tabasco</option>
+                                                <option value="28">Tamaulipas</option>
+                                                <option value="29">Tlaxcala</option>
+                                                <option value="30">Veracruz</option>
+                                                <option value="31">Yucatán</option>
+                                                <option value="32">Zacatecas</option>
+                                            </select>
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h4>Cuidad &nbsp;</h4>
+                                            <input class="input-text" type="text" placeholder="Cuidad">
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h4>Código Postal &nbsp;</h4>
+                                            <input class="input-text" type="text" placeholder="Código Postal">
+                                        </div>
+                                        <div class="white-space-32"></div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="column">
+                                        <h3>
+                                            MÉTODO DE PAGO
+                                        </h3>
+                                        <div class="white-space-16"></div>
+                                        <div class="responsive-img justify-start">
+                                            <img src="assets/img/cards1.png" alt="Tarjetas" title="Tarjetas">
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h4>Nombre del titular &nbsp;</h4>
+                                            <input class="input-text" type="text" placeholder="Títular de la carpeta" required>
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h4>Número de la tarjeta &nbsp;</h4>
+                                            <input class="input-text" type="text" placeholder="16 dígitos" maxlength="16" required>
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h4>Fecha de expiración &nbsp;</h4>
+                                            <input class="input-text" type="text" placeholder="MM/YY" maxlength="5" required>
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h4>Código de seguridad &nbsp;</h4>
+                                            <input class="input-text" type="text" placeholder="3 dígitos" maxlength="3" required>
+                                        </div>
+                                        <div class="white-space-32"></div>
+                                        <div class="complete-pay">
+                                            <a class="btn btn-pay" href="#">
+                                                COMPLETAR PAGO
+                                            </a>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+
+
+                        <div class="white-space-64"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div> <!-- End Main Column-->
+    </div> <!-- End Main-cart-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Roboto:400,500,700']
+            }
+        });
+
+        let toCheckout = document.getElementById('btn-checkout');
+
+        toCheckout.addEventListener('click', function(){
+            toCheckout.style.display = 'none';
+            let checkoutToggle = document.getElementById('checkout').setAttribute('style', 'display: flex !important');            
+        });
+
+    </script>
+</body>
+</html>

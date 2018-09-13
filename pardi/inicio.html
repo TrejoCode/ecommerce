@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/core.css" media="screen">
+    <link rel="stylesheet" href="assets/css/style.css" media="screen">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
+    <title>Pardi Distrubución - eCommerce</title>
+</head>
+<body>   
+
+    <div class="main flex">
+        <div class="column">
+            
+            <header>
+                <div class="row justify-center">
+                    <div class="container">
+                        <div class="row-responsive" id="break-ipad">
+                            <div class="logo auto align-center wow fadeInLeft">
+                                <a href="#">
+                                    <div class="responsive-img">
+                                        <img src="assets/img/logo.jpg" alt="Dwit México Logo" title="Dwit México Logo"/>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="search align-center wow fadeInLeft" data-wow-delay="0.4s">
+                                <input class="input-search input-text" type="text" name="search-input"/>
+                                <button class="btn btn-orange" id="search-button">
+                                    <i class="color-white fas fa-search"></i>         
+                                </button>
+                            </div>
+                            <div class="cart-user auto align-center wow fadeInRight" data-wow-delay="0.7s">
+                                <div class="cart">
+                                    <div class="row">
+                                        <div class="icon align-center">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </div>
+                                        <div class="column">
+                                            <a class="weight-medium">
+                                                CARRITO
+                                            </a>
+                                            <a class="subtotal link color-orange weight-medium" href="#">
+                                                $250.00
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <div class="row">
+                                        <div class="icon align-center">
+                                            <i class="fas fa-user-tag"></i>
+                                        </div>
+                                        <div class="column">
+                                            <a class="weight-medium">
+                                                INVITADO
+                                            </a>
+                                            <a id="open-modal-login" class="sign-in link color-orange weight-medium" href="#">
+                                                INGRESAR
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <div class="row">
+                                        <div class="icon align-center">
+                                            <i class="fas fa-user-tag"></i>
+                                        </div>
+                                        <div class="column">
+                                            <a class="weight-medium">
+                                                INVITADO
+                                            </a>
+                                            <a id="open-modal-login" class="sign-in link color-orange weight-medium" href="#">
+                                                Iniciar Sesión
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </header><!-- End Header-->
+
+            <div class="white-space-32"></div>
+
+            <div class="banner justify-center">
+                <div class="container">
+                    <div class="row-responsive">
+                        <div class="left">
+                            <div class="categories wow fadeInLeft" data-wow-delay="0.5s">
+                                <div class="column">
+                                    <div class="category-head">
+                                        <h3 class="color-white">
+                                            CATEGORIAS
+                                        </h3>
+                                    </div>
+                                    <div class="category-item bordered">
+                                        <a class="link weight-medium" href="#">
+                                            Electrodomésticos
+                                        </a>
+                                    </div>
+                                    <div class="category-item bordered">
+                                        <a class="link weight-medium" href="#">
+                                            Linea Blanca
+                                        </a>
+                                    </div>
+                                    <div class="category-item bordered">
+                                        <a class="link weight-medium" href="#">
+                                            Juguetería
+                                        </a>
+                                    </div>
+                                    <div class="category-item bordered">
+                                        <a class="link weight-medium" href="#">
+                                            Cosméticos
+                                        </a>
+                                    </div>
+                                    <div class="category-item bordered">
+                                        <a class="link weight-medium" href="#">
+                                            Hogar
+                                        </a>
+                                    </div>
+                                    <div class="category-item bordered">
+                                        <a class="link weight-medium" href="#">
+                                            Sección Personalizada
+                                        </a>
+                                    </div>
+                                    <div class="category-item bordered">
+                                        <a class="link weight-bold color-darkGray" href="#">
+                                            Ver más
+                                        </a>
+                                    </div>
+                                    <div class="category-item bordered">
+                                        <a class="link weight-bold" href="#">
+                                            <span class="color-red">PROMOCIONES</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class='slider wow fadeInRight' data-wow-delay="0.7s">
+                                <div class="slide1" style="background-image: url(assets/img/banner1.jpg);"></div>
+                                <div class="slide2" style="background-image: url(assets/img/banner2.jpg);"></div>
+                                <div class="slide3" style="background-image: url(assets/img/banner3.jpg);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="white-space-32"></div>
+
+            <div class="promotions justify-center">
+                <div class="container">
+                    <div class="column">
+                        <div class="white-space-32"></div>
+                        <div class="promotion-title align-center color-orange">
+                            <i class="fas fa-tags"></i>
+                            <h2 class="color-orange">
+                                &nbsp; PROMOCIONES
+                            </h2>
+                        </div>
+                        <div class="white-space-64"></div>
+                        <div class="promotions-grid column wow fadeInUp">
+                            <div class="row-responsive">
+                                <div class="promotion-item">
+                                    <div class="column">
+                                        <div class="promotion-image responsive-img">
+                                            <img src="assets/img/producto1.jpg" alt="Producto en Promoción" title="Producto en Promoción">
+                                        </div>
+                                        <div class="white-space-8"></div>
+                                        <div class="promotion-name justify-center">
+                                            <h3>
+                                                Laptop HP G99 Negra
+                                            </h3>
+                                        </div>
+                                        <div class="white-space-8"></div>
+                                        <div class="promotion-price justify-center align-center">
+                                            <h4>
+                                                $500.00 &nbsp;
+                                            </h4>
+                                            <h5 class="color-red discount">
+                                                $667.00
+                                            </h5>
+                                        </div>
+                                        <div class="white-space-8"></div>
+                                        <div class="div justify-center color-lightGray">
+                                            <a class="btn btn-cart link" href="#">
+                                                AÑADIR AL CARRITO
+                                            </a>
+                                        </div>
+                                        <div class="white-space-24"></div>
+                                    </div>
+                                </div> <!-- End Promotion-item-->
+                                
+
+                                <div class="promotion-item">
+                                    <div class="column">
+                                        <div class="promotion-image responsive-img">
+                                            <img src="assets/img/producto1.jpg" alt="Producto en Promoción" title="Producto en Promoción">
+                                        </div>
+                                        <div class="white-space-8"></div>
+                                        <div class="promotion-name justify-center">
+                                            <h3>
+                                                Laptop HP G99 Negra
+                                            </h3>
+                                        </div>
+                                        <div class="white-space-8"></div>
+                                        <div class="promotion-price justify-center align-center">
+                                            <h4>
+                                                $500.00 &nbsp;
+                                            </h4>
+                                            <h5 class="color-red discount">
+                                                $667.00
+                                            </h5>
+                                        </div>
+                                        <div class="white-space-8"></div>
+                                        <div class="div justify-center color-lightGray">
+                                            <a class="btn btn-cart link" href="#">
+                                                AÑADIR AL CARRITO
+                                            </a>
+                                        </div>
+                                        <div class="white-space-24"></div>
+                                    </div>
+                                </div> <!-- End Promotion-item-->
+
+                                <div class="promotion-item">
+                                    <div class="column">
+                                        <div class="promotion-image responsive-img">
+                                            <img src="assets/img/producto1.jpg" alt="Producto en Promoción" title="Producto en Promoción">
+                                        </div>
+                                        <div class="white-space-8"></div>
+                                        <div class="promotion-name justify-center">
+                                            <h3>
+                                                Laptop HP G99 Negra COLOR NEGRA 250 GB + 128 SSD
+                                            </h3>
+                                        </div>
+                                        <div class="white-space-8"></div>
+                                        <div class="promotion-price justify-center align-center">
+                                            <h4>
+                                                $500.00 &nbsp;
+                                            </h4>
+                                            <h5 class="color-red discount">
+                                                $667.00
+                                            </h5>
+                                        </div>
+                                        <div class="white-space-8"></div>
+                                        <div class="div justify-center color-lightGray">
+                                            <a class="btn btn-cart link" href="#">
+                                                AÑADIR AL CARRITO
+                                            </a>
+                                        </div>
+                                        <div class="white-space-24"></div>         
+                                    </div>
+                                </div> <!-- End Promotion-item-->
+
+                                <div class="promotion-item">
+                                    <div class="column">
+                                        <div class="promotion-image responsive-img">
+                                            <img src="assets/img/producto1.jpg" alt="Producto en Promoción" title="Producto en Promoción">
+                                        </div>
+                                        <div class="white-space-8"></div>
+                                        <div class="promotion-name justify-center">
+                                            <h3>
+                                                Laptop HP G99 Negra
+                                            </h3>
+                                        </div>
+                                        <div class="white-space-8"></div>
+                                        <div class="promotion-price justify-center align-center">
+                                            <h4>
+                                                $500.00 &nbsp;
+                                            </h4>
+                                            <h5 class="color-red discount">
+                                                $667.00
+                                            </h5>
+                                        </div>
+                                        <div class="white-space-8"></div>
+                                        <div class="div justify-center color-lightGray">
+                                            <a class="btn btn-cart link" href="#">
+                                                AÑADIR AL CARRITO
+                                            </a>
+                                        </div>
+                                        <div class="white-space-24"></div>
+                                    </div>
+                                </div> <!-- End Promotion-item -->
+                            </div> <!-- End Row-Responsive -->
+
+                            <div class="white-space-32"></div>
+                            
+                            <div class="row-responsive">
+                                    <div class="promotion-item">
+                                        <div class="column">
+                                            <div class="promotion-image responsive-img">
+                                                <img src="assets/img/producto1.jpg" alt="Producto en Promoción" title="Producto en Promoción">
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="promotion-name justify-center">
+                                                <h3>
+                                                    Laptop HP G99 Negra
+                                                </h3>
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="promotion-price justify-center align-center">
+                                                <h4>
+                                                    $500.00 &nbsp;
+                                                </h4>
+                                                <h5 class="color-red discount">
+                                                    $667.00
+                                                </h5>
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="div justify-center color-lightGray">
+                                                <a class="btn btn-cart link" href="#">
+                                                    AÑADIR AL CARRITO
+                                                </a>
+                                            </div>
+                                            <div class="white-space-24"></div>
+                                        </div>
+                                    </div> <!-- End Promotion-item-->
+                                    
+    
+                                    <div class="promotion-item">
+                                        <div class="column">
+                                            <div class="promotion-image responsive-img">
+                                                <img src="assets/img/producto1.jpg" alt="Producto en Promoción" title="Producto en Promoción">
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="promotion-name justify-center">
+                                                <h3>
+                                                    Laptop HP G99 Negra
+                                                </h3>
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="promotion-price justify-center align-center">
+                                                <h4>
+                                                    $500.00 &nbsp;
+                                                </h4>
+                                                <h5 class="color-red discount">
+                                                    $667.00
+                                                </h5>
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="div justify-center color-lightGray">
+                                                <a class="btn btn-cart link" href="#">
+                                                    AÑADIR AL CARRITO
+                                                </a>
+                                            </div>
+                                            <div class="white-space-24"></div>
+                                        </div>
+                                    </div> <!-- End Promotion-item-->
+    
+                                    <div class="promotion-item">
+                                        <div class="column">
+                                            <div class="promotion-image responsive-img">
+                                                <img src="assets/img/producto1.jpg" alt="Producto en Promoción" title="Producto en Promoción">
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="promotion-name justify-center">
+                                                <h3>
+                                                    Laptop HP G99 Negra
+                                                </h3>
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="promotion-price justify-center align-center">
+                                                <h4>
+                                                    $500.00 &nbsp;
+                                                </h4>
+                                                <h5 class="color-red discount">
+                                                    $667.00
+                                                </h5>
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="div justify-center color-lightGray">
+                                                <a class="btn btn-cart link" href="#">
+                                                    AÑADIR AL CARRITO
+                                                </a>
+                                            </div>
+                                            <div class="white-space-24"></div>
+                                        </div>
+                                    </div> <!-- End Promotion-item-->
+    
+                                    <div class="promotion-item">
+                                        <div class="column">
+                                            <div class="promotion-image responsive-img">
+                                                <img src="assets/img/producto1.jpg" alt="Producto en Promoción" title="Producto en Promoción">
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="promotion-name justify-center">
+                                                <h3>
+                                                    Laptop HP G99 Negra
+                                                </h3>
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="promotion-price justify-center align-center">
+                                                <h4>
+                                                    $500.00 &nbsp;
+                                                </h4>
+                                                <h5 class="color-red discount">
+                                                    $667.00
+                                                </h5>
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="div justify-center color-lightGray">
+                                                <a class="btn btn-cart link" href="#">
+                                                    AÑADIR AL CARRITO
+                                                </a>
+                                            </div>
+                                            <div class="white-space-24"></div>
+                                        </div>
+                                    </div> <!-- End Promotion-item -->
+                                </div> <!-- End Row-Responsive -->                                                                                       
+
+                        </div> <!-- End Promotion-Grid -->
+                        <div class="white-space-64"></div>
+                    </div> <!-- End Promotion Column -->
+                </div>
+            </div> <!-- End Promotion -->
+            
+
+            <div class="suscribe justify-center wow fadeInDown">
+                <div class="container">
+                    <div class="suscribe-container row-responsive">
+                        <div class="column">
+                            <h3 class="color-white">
+                                ¿Ofertas, Promociones, Descuentos?
+                            </h3>                            
+                            <p class="color-white">
+                                Suscríbete por correo
+                            </p>
+                        </div>
+                        <div class="suscribe-mail auto align-center color-white">
+                            <input class="input-text input-suscribe" type="text" name="suscribe" placeholder="Ingresa tu correo">
+                            <div>
+                                <a class="btn-suscribe btn btn-yellow">SUSCRIBIRSE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="white-space-64"></div>
+
+            <footer class="flex">
+                <div class="justify-center">
+                    <div class="container">
+                        <div class="column">
+                            <div class="row-responsive">
+                                <div class="contact wow fadeInLeft" data-wow-delay="0.3s">
+                                    <div class="column">
+                                        <h3>
+                                            CONTACTO
+                                        </h3>
+                                        <div class="white-space-16"></div> 
+                                        <p>
+                                            <i class="fas fa-home"></i>
+                                            Av. Arco Bincentenario, Mza. 11, Lote 1119-33, SM 255, 77500 Cancún, Q.R.
+                                        </p>
+                                        <div class="white-space-16"></div>
+                                        <p>
+                                            <i class="fas fa-envelope"></i>
+                                            <a href="mailto:soportecliente@ecommerce.com">
+                                                soportecliente@ecommerce.com
+                                            </a>                                            
+                                        </p>
+                                        <div class="white-space-16"></div>
+                                        <p>
+                                            <i class="fas fa-phone"></i>
+                                            <a href="tel:(888) 123 4567">
+                                                (888) 123 4567
+                                            </a>                                            
+                                        </p>
+                                        <div class="white-space-16"></div>
+                                        <div class="row footer-icons">
+                                            <div class="footer-icon bordered auto text-center">
+                                                <a rel="follow" target="_blank" href="#">
+                                                    <i class="fab fa-facebook"></i>
+                                                </a>            
+                                            </div>
+                                            <div class="footer-icon bordered auto text-center">
+                                                <a rel="follow" target="_blank" href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                            <div class="footer-icon bordered auto">
+                                                <a rel="follow" target="_blank" href="#">
+                                                    <i class="fab fa-whatsapp"></i>
+                                                </a>
+                                            </div>
+                                            <div class="footer-icon bordered auto">
+                                                <a rel="follow" target="_blank" href="#">
+                                                    <i class="fab fa-skype"></i>
+                                                </a>
+                                            </div>                                            
+                                        </div>                                        
+                                    </div>                                    
+                                </div>
+                                <div class="help wow fadeInDown" data-wow-delay="0.5s">
+                                    <div class="column">
+                                        <h3>
+                                            AYUDA
+                                        </h3>
+                                        <div class="white-space-16"></div>
+                                        <a class="link" href="#">
+                                            Contacto
+                                        </a>
+                                        <div class="white-space-16"></div>
+                                        <a class="link" href="#">
+                                            Atención al Cliente
+                                        </a>
+                                        <div class="white-space-16"></div>
+                                        <a class="link" href="#">
+                                            Mapa del sitio
+                                        </a>
+                                        <div class="white-space-16"></div>
+                                        <a class="link" href="#">
+                                            Soporte
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="account wow fadeInRight" data-wow-delay="0.7s">
+                                    <div class="column">
+                                        <h3>
+                                            MI CUENTA
+                                        </h3>
+                                        <div class="white-space-16"></div>
+                                        <a class="link" href="#">
+                                            Mis datos
+                                        </a>
+                                        <div class="white-space-16"></div>
+                                        <a class="link" href="#">
+                                            Pedidos
+                                        </a>
+                                        <div class="white-space-16"></div>
+                                        <a class="link" href="#">
+                                            Carrito
+                                        </a>
+                                        <div class="white-space-16"></div>
+                                        <a class="link" href="#">
+                                            Tarjeta de regalos
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white-space-64"></div>
+
+                            <div class="payment wow fadeInDown">
+                                <div class="responsive-img">
+                                    <img src="assets/img/banks.png" alt="Tarjetas de Crédito" alt="Tarjetas de Crédito">
+                                </div>
+                            </div>
+                            <div class="white-space-64"></div>
+                        </div>                        
+                    </div> 
+                </div>                               
+            </footer>
+
+            <div class="modal-login justify-center" id="modal-login">
+                <div class="container">
+                    <div class="modal-content">
+                        <div class="column">
+                            <div class="row justify-end">
+                                <a href="" id="modal-close">&times;</a> 
+                            </div>
+                            <div class="login-method row-responsive">
+                                <div class="left">
+                                    <div class="column">
+                                        <h2 class="login-title">
+                                            INICIAR SESIÓN
+                                        </h2>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h5>
+                                                Correo: &nbsp;
+                                            </h5>
+                                            <input class="input-text" type="email" name="login-email" />
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="row-responsive align-center">
+                                            <h5>
+                                                Contraseña: &nbsp;
+                                            </h5>
+                                            <input class="input-text" type="password" name="login-password" />
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div>
+                                            <a class="btn btn-orange" href="#" id="btn-login">
+                                                INICIAR SESIÓN
+                                            </a>
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                    </div>
+                                </div>
+                                <div class="right align-center">
+                                    <div class="column">
+                                        <div class="white-space-8"></div>
+                                        <div class="login-fb color-white justify-center align-center" id="login-fb">
+                                            <i class="fab fa-facebook-f"></i>
+                                            Iniciar Sesión con Facebook
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="login-gogl color-white justify-center align-center" id="login-gogl">
+                                            <i class="fab fa-google"></i>
+                                            Iniciar Sesión con Google
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Modal-->
+
+        </div> <!-- End Main Column -->
+    </div>  <!-- End Main -->   
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Roboto:400,500,700']
+            }
+        });
+    </script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        // Get the modal
+            var modal = document.getElementById('modal-login');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("open-modal-login");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementById("modal-close");
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+    </script>
+</body>
+</html>
