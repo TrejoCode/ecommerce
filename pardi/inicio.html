@@ -38,7 +38,7 @@
                                 <div class="cart">
                                     <div class="row">
                                         <div class="icon align-center">
-                                            <i class="fas fa-shopping-cart"></i>
+                                            <i class="fas fa-shopping-cart fa-2x"></i>
                                         </div>
                                         <div class="column">
                                             <a class="weight-medium">
@@ -190,7 +190,7 @@
                                         </div>
                                         <div class="white-space-8"></div>
                                         <div class="div justify-center color-lightGray">
-                                            <a class="btn btn-cart link" href="#">
+                                            <a class="btn btn-cart link" onclick="addMessage();" href="javascript:void(0);">
                                                 AÑADIR AL CARRITO
                                             </a>
                                         </div>
@@ -221,7 +221,7 @@
                                         </div>
                                         <div class="white-space-8"></div>
                                         <div class="div justify-center color-lightGray">
-                                            <a class="btn btn-cart link" href="#">
+                                            <a class="btn btn-cart link" onclick="addMessage();" href="#">
                                                 AÑADIR AL CARRITO
                                             </a>
                                         </div>
@@ -251,7 +251,7 @@
                                         </div>
                                         <div class="white-space-8"></div>
                                         <div class="div justify-center color-lightGray">
-                                            <a class="btn btn-cart link" href="#">
+                                            <a class="btn btn-cart link" onclick="addMessage();" href="#">
                                                 AÑADIR AL CARRITO
                                             </a>
                                         </div>
@@ -281,7 +281,7 @@
                                         </div>
                                         <div class="white-space-8"></div>
                                         <div class="div justify-center color-lightGray">
-                                            <a class="btn btn-cart link" href="#">
+                                            <a class="btn btn-cart link" onclick="addMessage();" href="#">
                                                 AÑADIR AL CARRITO
                                             </a>
                                         </div>
@@ -410,10 +410,10 @@
                                                     AÑADIR AL CARRITO
                                                 </a>
                                             </div>
-                                            <div class="white-space-24"></div>
+                                            <div class="white-space-24" onclick={this.x.bid(this)}></div>
                                         </div>
                                     </div> <!-- End Promotion-item -->
-                                </div> <!-- End Row-Responsive -->                                                                                       
+                                </div> <!-- End Row-Responsive -->     
 
                         </div> <!-- End Promotion-Grid -->
                         <div class="white-space-64"></div>
@@ -615,6 +615,15 @@
                 </div>
             </div> <!-- End Modal-->
 
+            <div class="popup justify-center hidden"id="popup">
+                <div class="container align-center justify-center">
+                    <i class="color-white fas fa-shopping-cart"></i>
+                    <p class="color-white">
+                        &nbsp;Añadido al Carrito
+                    </p>
+                </div>
+            </div>
+
         </div> <!-- End Main Column -->
     </div>  <!-- End Main -->   
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script>
@@ -655,6 +664,16 @@
                     modal.style.display = "none";
                 }
             }
+
+            function addMessage(){
+                let popup = document.getElementById('popup');
+                popup.classList.remove('hidden');
+                setTimeout(function(){
+                    popup.classList.add('hidden');
+                }, 2500);
+            }
+
+
     </script>
 </body>
 </html>

@@ -251,9 +251,10 @@ footer .contact .footer-icons .footer-icon i {
     padding: var(--paddingNormal);
 }
 
-.stiky-cart {
+.stiky-cart, .popup {
     display: none;
 }
+
 
 .detalles .left {
     max-width: 40%;
@@ -539,6 +540,12 @@ footer .contact .footer-icons .footer-icon i {
         color: var(--white);
     }
 
+    .popup {
+        z-index: 1;
+    }
+
+
+
     .detalles .left {
         max-width: 100%;
         margin-right: 0;
@@ -649,4 +656,13 @@ footer .contact .footer-icons .footer-icon i {
         justify-content: center;
     }
 
+}
+
+
+.popup {
+    background-color: var(--red);
+    position: fixed;
+    bottom: 0;
+    padding: var(--paddingNormal) 0;
+    color: var(--white);
 }
