@@ -405,6 +405,14 @@ footer .contact .footer-icons .footer-icon i {
 }
 
 
+.page-banner {
+    min-height: 200px;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+
 /*    NOTEBOOKS, IPADS DEVICES    */
 
 @media screen and (max-width: 992px) {    

@@ -353,6 +353,17 @@ label {
     padding: var(--paddingNormal) var(--paddingMedium);
 }
 
+.textarea {
+    border-radius: 4px;
+    color: var(--lightGray);                
+    font-size: var(--fontTiny);        
+    font-family: var(--Roboto);
+    background-color: var(--white);
+    font-weight: var(--weightMedium);    
+    border: 2px solid var(--borderGray);
+    padding: var(--paddingNormal) var(--paddingMedium);
+}
+
 .hidden {
     display: none !important;
 }
@@ -452,6 +463,23 @@ label {
     font-weight: var(--weightBold);
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.quote-green {
+    padding: var(--paddingMedium);
+    background-color: var(--green);
+}
+.quote-red {
+    padding: var(--paddingMedium);
+    background-color: var(--red);
+}
+.quote-yellow {
+    padding: var(--paddingMedium);
+    background-color: var(--yellow);
+}
+
 
 /*    LARGE DEVICES    */
 
@@ -484,6 +512,15 @@ label {
     .white-space-64 {
         height: 32px;
     }    
+
+    .quote-green, .quote-red, .quote-yellow {
+        padding: 0;
+    }
+
+    .quote-green h5, .quote-red h5, .quote-yellow h5 {
+        padding: var(--paddingNormal);
+    }
+    
 
 }
 
