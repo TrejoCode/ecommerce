@@ -205,6 +205,15 @@ p {
     display: flex;
 }
 
+.noflex {
+    display: block;
+}
+
+.noflex div, .noflex img, .noflex nav {
+    display: block;
+}
+
+
 .flex div, .flex img, .flex nav {
     display: flex;
 }
